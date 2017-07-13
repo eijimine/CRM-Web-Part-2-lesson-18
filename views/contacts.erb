@@ -7,7 +7,7 @@
       <ul>
       <% @contacts.each do |contact| %>
       <li class="contact_li">
-      <%= contact.first_name.capitalize%> <%= contact.last_name.capitalize%>(<%= contact.email %>)</p>
+      <a href="/contacts/<%= contact.id %>"> <%= contact.first_name.capitalize%> <%= contact.last_name.capitalize%></a>  (<%= contact.email %>)</p>
       <a href="#" class="list_links">Edit</a>  |  <a href="#" class="list_links">Delete</a>
       </li>
       <% end %>
