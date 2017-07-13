@@ -1,15 +1,15 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <h2>Contact list</h2>
-      <a href="/index">Home</a>
+<h2></h2>
+      <!-- <a href="/index">Home</a> -->
+      <div class="contact_list">
+        <p class="no_of_contacts">
+          There are <span><%= @contacts.count %></span> contacts
+        </p>
+      <ul>
       <% @contacts.each do |contact| %>
-      <p><%= contact.full_name %> <%= contact.email %> <%= contact.note %></p>
+      <li class="contact_li">
+      <%= contact.first_name.capitalize%> <%= contact.last_name.capitalize%>(<%= contact.email %>)</p>
+      <a href="#" class="list_links">Edit</a>  |  <a href="#" class="list_links">Delete</a>
+      </li>
       <% end %>
     </ul>
-  </body>
-</html>
+    </div>
