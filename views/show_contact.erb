@@ -1,8 +1,13 @@
-<h1>Contact's Page</h1>
+<h1>Contact's Page  | <a class="contact_buttons" href="/contacts/<%= @contact.id %>/edit">Edit</a></h1>
 
 </ul>
  <li>Name: <%= @contact.first_name.capitalize%> <%= @contact.last_name.capitalize%></li>
  <li>Email: <%= @contact.email %></li>
  <li>Email: <%= @contact.note %></li>
 </ul>
+
+<form action='/contacts/<%= @contact.id %>' method='post'>
+  <input type='hidden' name='_method' value='delete'>
+  <input type='submit' name='Delete Contact' value='delete'>
+</form>
 <hr>

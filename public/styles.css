@@ -50,6 +50,7 @@ footer {
 }
 
 h1 {
+  font-size: 25px;
   border-bottom: 5px solid black;
 }
 
@@ -83,8 +84,16 @@ span{
 .list_links{
   color: blue;
   font-size: 18px;
+}
 
+.contact_buttons{
+  color: navy;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 18px;
+  border: 1px;
+}
 
-  /*border-bottom: 5px;
-  border-color: lightblue;*/
+.edit_form{
+  margin: 50px 0 50px 0;
 }
